@@ -8,8 +8,17 @@ public void move() {
 	if (x<300) vx=-1;
 	if (x<100) vx=1;
 	if (Math.random()<0.06) {
-		GameWorld.enemies.add(new StraightEnemy(x, y, 0, 2));
+		GameWorld.enemies.add(new StraightEnemy(x,y,0,2));
 	}	
+	if (Math.random()<0.06) {
+		GameWorld.enemies.add(new RandomEnemy(x,y,0,1));
+	}
+	if (Math.random()<0.06) {
+		GameWorld.enemies.add(new DropEnemy(x,y,0,5));
+	}
+	if (Math.random()<0.06) {
+		GameWorld.enemies.add(new CurveEnemy(x,y,0,6));
+	}
 }
 public void draw(MyFrame f) {
 	f.setColor(0, 128, 0);

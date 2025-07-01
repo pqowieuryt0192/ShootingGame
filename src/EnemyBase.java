@@ -19,6 +19,9 @@ public void move() {
 	if (Math.random()<0.06) {
 		GameWorld.enemies.add(new CurveEnemy(x,y,0,6));
 	}
+	if (Math.random()<0.06) {
+		GameWorld.enemies.add(new NewBase(x,y,0,4));
+	}
 }
 public void draw(MyFrame f) {
 	f.setColor(0, 128, 0);

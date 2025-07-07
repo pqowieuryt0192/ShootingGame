@@ -5,22 +5,22 @@ public EnemyBase(double x, double y, double vx, double vy) {
 }
 public void move() {
 	super.move();
-	if (x<300) vx=-1;
+	if (x>300) vx=-1;
 	if (x<100) vx=1;
 	if (Math.random()<0.06) {
-		GameWorld.enemies.add(new StraightEnemy(x,y,0,2));
+		GameWorld.enemies.add(new StraightEnemy(x,y,0,4));
 	}	
 	if (Math.random()<0.06) {
-		GameWorld.enemies.add(new RandomEnemy(x,y,0,1));
+		GameWorld.enemies.add(new RandomEnemy(x,y,0,7));
 	}
 	if (Math.random()<0.06) {
-		GameWorld.enemies.add(new DropEnemy(x,y,0,5));
+		GameWorld.enemies.add(new DropEnemy(x,y,0,6));
 	}
 	if (Math.random()<0.06) {
-		GameWorld.enemies.add(new CurveEnemy(x,y,0,6));
+		GameWorld.enemies.add(new CurveEnemy(x,y,0,9));
 	}
 	if (Math.random()<0.06) {
-		GameWorld.enemies.add(new NewBase(x,y,0,4));
+		GameWorld.enemies.add(new NewBase(x,y,0,10));
 	}
 }
 public void draw(MyFrame f) {

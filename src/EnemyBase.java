@@ -11,16 +11,16 @@ public void move() {
 		GameWorld.enemies.add(new StraightEnemy(x,y,0,4));
 	}	
 	if (Math.random()<0.06) {
-		GameWorld.enemies.add(new RandomEnemy(x,y,0,7));
+		GameWorld.enemies.add(new RandomEnemy(x,y,0,1));
 	}
 	if (Math.random()<0.06) {
-		GameWorld.enemies.add(new DropEnemy(x,y,0,6));
+		GameWorld.enemies.add(new DropEnemy(x,y,0,2));
 	}
 	if (Math.random()<0.06) {
-		GameWorld.enemies.add(new CurveEnemy(x,y,0,9));
+		GameWorld.enemies.add(new CurveEnemy(x,y,0,3));
 	}
 	if (Math.random()<0.06) {
-		GameWorld.enemies.add(new NewBase(x,y,0,10));
+		GameWorld.enemies.add(new NewBase(x,y,0,4));
 	}
 }
 public void draw(MyFrame f) {

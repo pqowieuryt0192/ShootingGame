@@ -35,6 +35,11 @@ import java.awt.event.KeyListener;
 				GameWorld.playerBullets.add(new PlayerBullet(x,y,-3,-10));
 				System.out.println("弾の数="+ GameWorld.playerBullets.capacity());
 			}
+			if (e.getKeyCode()==KeyEvent.VK_ENTER)
+			{
+				System.out.println("Enterキーが押されました");
+				GameWorld.enterPressed=true;
+			}
 		}
 		 public void keyReleased(KeyEvent e)
 		 {

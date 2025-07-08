@@ -2,6 +2,7 @@
 public class NewBase extends Enemy{
 	public NewBase(double x, double y, double vx, double vy) {
 		super(x, y, vx, vy);
+		life=2;
 	}
 	public void draw(MyFrame f) {
 		f.setColor(128, 0, 128);
